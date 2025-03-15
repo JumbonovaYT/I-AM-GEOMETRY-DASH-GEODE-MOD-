@@ -1,0 +1,28 @@
+{
+	"geode": "4.0.1",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "jumbonova.i_am_geometry_dash",
+	"name": "I AM GEOMETRY DASH",
+	"version": "v1.0.0",
+	"developer": "Jumbonova",
+	"description": "GEOMETRY DASH 12 0CLOCK PST FRIDAY",
+	"early-load": true,
+	"tags": ["joke", "interface"],
+	"dependencies": [
+        {
+            "id": "geode.node-ids",
+            "version": ">=v1.17.0",
+            "importance": "required"
+        }
+    ],
+	"resources": {
+		"sprites": [
+			"resources/*.png"
+		]
+	}
+}
