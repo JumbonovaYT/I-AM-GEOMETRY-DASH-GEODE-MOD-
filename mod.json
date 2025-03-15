@@ -14,12 +14,15 @@
 	"early-load": true,
 	"tags": ["joke", "interface"],
 	"dependencies": [
-        {
+	  {
             "id": "geode.node-ids",
             "version": ">=v1.17.0",
             "importance": "required"
-        }
-    ],
+          }
+        ],
+	"links": {
+		"source": "https://github.com/JumbonovaYT/I-AM-GEOMETRY-DASH-GEODE-MOD-"
+	},
 	"resources": {
 		"sprites": [
 			"resources/*.png"
