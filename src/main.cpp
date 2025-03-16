@@ -1,8 +1,7 @@
 #include <Geode/Geode.hpp>
-using namespace geode::prelude;
 #include <Geode/modify/MenuLayer.hpp>
 #include <Geode/modify/LoadingLayer.hpp>
-#include <Geode/modify/MenuGameLayer.hpp>
+using namespace geode::prelude;
 
 class $modify(MyMenuLayer, MenuLayer) {
 	bool init() {
