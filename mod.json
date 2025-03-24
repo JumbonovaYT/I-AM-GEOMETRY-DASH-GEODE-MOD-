@@ -3,29 +3,27 @@
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074"
+		"mac": "2.2074"
 	},
 	"id": "jumbonova.i_am_geometry_dash",
 	"name": "I AM GEOMETRY DASH",
-	"version": "v1.0.2",
+	"version": "v1.0.3",
 	"developer": "Jumbonova",
-	"description": "GEOMETRY DASH 12 0CLOCK PST FRIDAY",
+	"description": "I AM MUSIC styled geometry dash logo.",
 	"early-load": true,
 	"tags": ["joke", "interface"],
-	"dependencies": [
-	  {
-            "id": "geode.node-ids",
-            "version": ">=v1.17.0",
-            "importance": "required"
-          }
-        ],
 	"links": {
 		"source": "https://github.com/JumbonovaYT/I-AM-GEOMETRY-DASH-GEODE-MOD-"
 	},
+	"incompatibilities": {
+		"ninxout.redash": {
+			"importance": "conflicting",
+			"version": "*"
+		}
+	},
 	"resources": {
 		"sprites": [
-			"resources/*.png"
+			"resources/title.png"
 		]
 	}
 }
