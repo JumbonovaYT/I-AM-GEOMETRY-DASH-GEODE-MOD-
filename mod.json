@@ -18,7 +18,7 @@
 	"incompatibilities": {
 		"ninxout.redash": {
 			"importance": "conflicting",
-			"version": "*"
+			"version": ">=1.0.0"
 		}
 	},
 	"resources": {
