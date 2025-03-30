@@ -4,7 +4,7 @@
 using namespace geode::prelude;
 
 class $modify(MyMenuLayer, MenuLayer) {
-	static void onModify(auto& self) {
+    static void onModify(auto& self) {
         (void) self.setHookPriorityAfterPost("MenuLayer::init", "flingus.geometry_pride");
     }
 
