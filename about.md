@@ -1,5 +1,5 @@
 # I AM GEOMETRY DASH
-Change the Geometry Dash logo to be a clickable button, in the style of the I AM MUSIC album cover, that makes a popup saying one of the following:
+Change the Geometry Dash logo to be a clickable button (or make a button in the bottom-menu if there is no logo), in the style of the I AM MUSIC album cover, that makes a popup saying one of the following:
 - "12 0CLOCK PST"
 - "FRIDAY"
 - "love all my supporters - it's time"
@@ -16,6 +16,3 @@ Change the Geometry Dash logo to be a clickable button, in the style of the I AM
 - "I AM GEOMETRY DASH OUT NOW"
 - "MARCH"
 - "DASH - DASH - DASH - DASH - DASH".
-
-# INCOMPATIBILITIES
-> `ninxout.redash` (Overcharged Main Menu) - conflicting -  Hides the logo in the MenuLayer

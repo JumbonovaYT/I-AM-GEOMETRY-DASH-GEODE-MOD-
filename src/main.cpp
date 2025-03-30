@@ -7,21 +7,39 @@ class $modify(MyMenuLayer, MenuLayer) {
 	bool init() {
 		if (!MenuLayer::init()) return false;
 		auto oldtitle = this->getChildByID("main-title");
-		if (!oldtitle) return true;
-		typeinfo_cast<CCSprite*>(oldtitle)->setOpacity(0);
+		if (!oldtitle->isVisible() || !oldtitle) { // make a button in the bottom-menu instead of making a title if there is no title
+			auto btmmenu = this->getChildByID("bottom-menu");
+			if (!btmmenu) return true;
 
-		auto titlemenu = CCMenu::create();
-		titlemenu->setID("iammusic-title-menu"_spr);
-		oldtitle->addChild(titlemenu);
-		titlemenu->setPosition(215, 23);
+			auto newbtnspr = CircleButtonSprite::create(
+				CCSprite::create("btn.png"_spr),
+				CircleBaseColor::Green,
+				CircleBaseSize::MediumAlt
+			);
+			auto newbtn = CCMenuItemSpriteExtra::create(
+				newbtnspr,
+				this,
+				menu_selector(MyMenuLayer::iammusic)
+			);
+			newbtn->setID("iammusic-btn"_spr);
+			btmmenu->addChild(newbtn);
+			btmmenu->updateLayout();
+		} else {
+			typeinfo_cast<CCSprite*>(oldtitle)->setOpacity(0);
 
-		auto title = CCMenuItemSpriteExtra::create(
-			CCSprite::create("title.png"_spr),
-			this,
-			menu_selector(MyMenuLayer::iammusic)
-		);
-		title->setID("iammusic-title"_spr);
-		titlemenu->addChild(title);
+			auto titlemenu = CCMenu::create();
+			titlemenu->setID("iammusic-title-menu"_spr);
+			oldtitle->addChild(titlemenu);
+			titlemenu->setPosition(215, 23);
+
+			auto title = CCMenuItemSpriteExtra::create(
+				CCSprite::create("title.png"_spr),
+				this,
+				menu_selector(MyMenuLayer::iammusic)
+			);
+			title->setID("iammusic-title"_spr);
+			titlemenu->addChild(title);
+		}
 		return true;
 	}
 	

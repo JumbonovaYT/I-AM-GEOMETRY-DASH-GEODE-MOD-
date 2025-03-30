@@ -7,7 +7,7 @@
 	},
 	"id": "jumbonova.i_am_geometry_dash",
 	"name": "I AM GEOMETRY DASH",
-	"version": "v1.0.3",
+	"version": "v1.0.4",
 	"developer": "Jumbonova",
 	"description": "I AM MUSIC styled geometry dash logo.",
 	"early-load": true,
@@ -15,15 +15,10 @@
 	"links": {
 		"source": "https://github.com/JumbonovaYT/I-AM-GEOMETRY-DASH-GEODE-MOD-"
 	},
-	"incompatibilities": {
-		"ninxout.redash": {
-			"importance": "conflicting",
-			"version": ">=1.0.0"
-		}
-	},
 	"resources": {
 		"sprites": [
-			"resources/title.png"
+			"resources/title.png",
+			"resources/btn.png"
 		]
 	}
 }
