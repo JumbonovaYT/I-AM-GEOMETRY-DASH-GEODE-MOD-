@@ -4,10 +4,15 @@
 using namespace geode::prelude;
 
 class $modify(MyMenuLayer, MenuLayer) {
+	static void onModify(auto& self) {
+        (void) self.setHookPriorityAfterPost("MenuLayer::init", "flingus.geometry_pride");
+    }
+
 	bool init() {
 		if (!MenuLayer::init()) return false;
 		auto oldtitle = this->getChildByID("main-title");
-		if (!oldtitle->isVisible() || !oldtitle) { // make a button in the bottom-menu instead of making a title if there is no title
+
+		if (!oldtitle || !oldtitle->isVisible()) { // make a button in the bottom-menu instead of making a title if there is no title
 			auto btmmenu = this->getChildByID("bottom-menu");
 			if (!btmmenu) return true;
 

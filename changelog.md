@@ -1,6 +1,10 @@
+# 1.0.5
+- Mod works with Geometry Pride (`flingus.geometry_pride`) by flingus (thanks hiimjustin000).
+- Small fixes like `!oldtitle->isVisible() || !oldtitle` becoming `!oldtitle || !oldtitle->isVisible()`.
+
 # 1.0.4 
 - Make a button on the `bottom-menu` if there is no `main-title` in the `MenuLayer`.
-- Because of the change above, the mod incompatibilites have been removed.
+- Because of the change above, the mod incompatibilities have been removed.
 
 # 1.0.3
 - Center the text better
