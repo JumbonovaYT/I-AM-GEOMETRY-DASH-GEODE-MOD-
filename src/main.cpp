@@ -5,8 +5,8 @@ using namespace geode::prelude;
 
 class $modify(MyMenuLayer, MenuLayer) {
 	static void onModify(auto& self) {
-        (void) self.setHookPriorityAfterPost("MenuLayer::init", "flingus.geometry_pride");
-    }
+		(void) self.setHookPriorityAfterPost("MenuLayer::init", "flingus.geometry_pride");
+	}
 
 	bool init() {
 		if (!MenuLayer::init()) return false;
@@ -35,7 +35,7 @@ class $modify(MyMenuLayer, MenuLayer) {
 			auto titlemenu = CCMenu::create();
 			titlemenu->setID("iammusic-title-menu"_spr);
 			oldtitle->addChild(titlemenu);
-			titlemenu->setPosition(215, 23);
+			titlemenu->setPosition({215, 30});
 
 			auto title = CCMenuItemSpriteExtra::create(
 				CCSprite::create("title.png"_spr),
@@ -50,7 +50,7 @@ class $modify(MyMenuLayer, MenuLayer) {
 	
 	void iammusic(CCObject*) {
 		std::string rngtxt = "Coming in 5 years!";
-		switch(rand() % 16 + 0) {
+		switch(rand() % 20) { // i never see "SEEYUH" when its at 19 so its at 20, probably just me being unlucky
 			case 1: rngtxt = "12 0CLOCK PST";
 			break;
 			case 2: rngtxt = "FRIDAY";
@@ -83,6 +83,11 @@ class $modify(MyMenuLayer, MenuLayer) {
 			break;
 			case 16: rngtxt = "DASH - DASH - DASH - DASH - DASH";
 			break;
+			case 17: rngtxt = "SWAMP IZZO";
+			break;
+			case 18: rngtxt = "FWAEH";
+			break;
+			case 19: rngtxt = "SEEYUH";
 		}
 		FLAlertLayer::create(
 			"GEOMETRY DASH",
@@ -98,6 +103,7 @@ class $modify(MyLoadingLayer, LoadingLayer) {
 		auto oldtitle = this->getChildByIDRecursive("gd-logo");
 		if (!oldtitle) return true;
 		typeinfo_cast<CCSprite*>(oldtitle)->setOpacity(0);
+		
 		auto searchPath = dirs::getModRuntimeDir() / Mod::get()->getID() / "resources";
 		CCFileUtils::get()->addSearchPath(searchPath.string().c_str()); // thanks alpha
 

@@ -1,13 +1,14 @@
 {
-	"geode": "4.0.1",
+	"geode": "4.4.0",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
-		"mac": "2.2074"
+		"mac": "2.2074",
+		"ios": "2.2074"
 	},
 	"id": "jumbonova.i_am_geometry_dash",
 	"name": "I AM GEOMETRY DASH",
-	"version": "v1.0.5",
+	"version": "v1.0.6",
 	"developer": "Jumbonova",
 	"description": "I AM MUSIC styled geometry dash logo.",
 	"early-load": true,
