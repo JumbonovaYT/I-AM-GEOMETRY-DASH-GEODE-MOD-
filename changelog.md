@@ -1,3 +1,6 @@
+# 1.0.8
+- so uh i forgot that geode already has node ids on the layers modified in this mod, removed the node ids dependency
+
 # 1.0.7
 - Updated to geode v5
 - Makes a button in the `bottom-menu` instead of changing the logo if icon ninja (`undefined0.icon_ninja`) is enabled because im too lazy to fix the incompatability rn, maybe v1.0.8

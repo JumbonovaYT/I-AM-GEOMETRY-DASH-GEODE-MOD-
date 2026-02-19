@@ -8,7 +8,7 @@
 	},
 	"id": "jumbonova.i_am_geometry_dash",
 	"name": "I AM GEOMETRY DASH",
-	"version": "v1.0.7",
+	"version": "v1.0.8",
 	"developer": "Jumbonova",
 	"description": "I AM MUSIC styled geometry dash logo",
 	"early-load": true,
@@ -20,9 +20,6 @@
 		"sprites": [
 			"resources/*.png"
 		]
-	},
-	"dependencies": {
-		"geode.node-ids": ">=v1.22.0"
 	},
 	"settings": {
 		"forceBtn": {
