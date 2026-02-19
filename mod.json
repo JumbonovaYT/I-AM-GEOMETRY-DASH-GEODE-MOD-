@@ -21,9 +21,6 @@
 			"resources/*.png"
 		]
 	},
-	"dependencies": {
-		"geode.node-ids": ">=v1.22.0"
-	},
 	"settings": {
 		"forceBtn": {
 			"name": "Force button",
@@ -32,4 +29,5 @@
 			"default": false
 		}
 	}
+
 }
