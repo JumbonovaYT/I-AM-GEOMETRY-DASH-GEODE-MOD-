@@ -1,16 +1,16 @@
 {
-	"geode": "4.4.0",
+	"geode": "5.0.0-beta.3",
 	"gd": {
-		"win": "2.2074",
-		"android": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074"
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
 	},
 	"id": "jumbonova.i_am_geometry_dash",
 	"name": "I AM GEOMETRY DASH",
-	"version": "v1.0.6",
+	"version": "v1.0.7",
 	"developer": "Jumbonova",
-	"description": "I AM MUSIC styled geometry dash logo.",
+	"description": "I AM MUSIC styled geometry dash logo",
 	"early-load": true,
 	"tags": ["joke", "interface"],
 	"links": {
@@ -18,8 +18,18 @@
 	},
 	"resources": {
 		"sprites": [
-			"resources/title.png",
-			"resources/btn.png"
+			"resources/*.png"
 		]
+	},
+	"dependencies": {
+		"geode.node-ids": ">=v1.22.0"
+	},
+	"settings": {
+		"forceBtn": {
+			"name": "Force button",
+			"description": "Forces the mod to make a button in the bottom-menu instead of changing the title.",
+			"type": "bool",
+			"default": false
+		}
 	}
 }

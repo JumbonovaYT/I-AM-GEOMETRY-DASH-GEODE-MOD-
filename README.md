@@ -1,6 +1,7 @@
 # I AM GEOMETRY DASH <img src="logo.png" width="40" alt="the mod's logo" />
 
-Change the Geometry Dash logo to be a clickable button (or make a button in the bottom-menu if there is no logo found), in the style of the I AM MUSIC album cover, that makes a popup saying one of the following:
+Changes the Geometry Dash logo to be in the style of Playboi Carti's *MUSIC*, that when clicked, shows a popup saying one of the following;
+- "Coming in 5 years"
 - "12 0CLOCK PST"
 - "FRIDAY"
 - "love all my supporters - it's time"
@@ -19,4 +20,6 @@ Change the Geometry Dash logo to be a clickable button (or make a button in the 
 - "DASH - DASH - DASH - DASH - DASH"
 - "SWAMP IZZO"
 - "FWAEH"
-- "SEEYUH".
+- "SEEYUH"
+---
+ if theres an incompatability, there should be a button in the bottom menu instead of there being a custom title

@@ -1,3 +1,10 @@
+# 1.0.7
+- Updated to geode v5
+- Makes a button in the `bottom-menu` instead of changing the logo if icon ninja (`undefined0.icon_ninja`) is enabled because im too lazy to fix the incompatability rn, maybe v1.0.8
+- Added a setting to make a button instead of changing the title
+- A lot of rewording
+- Added Node IDs dependency
+
 # 1.0.6
 - Add "SWAMP IZZO", requested by [KankagameTR](user:24881859), as well as "FWAEH" and "SEEYUH" (my idea).
 - Remove some useless code like... adding 0... :sob:

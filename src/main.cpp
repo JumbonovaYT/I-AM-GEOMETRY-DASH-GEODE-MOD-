@@ -12,7 +12,7 @@ class $modify(MyMenuLayer, MenuLayer) {
 		if (!MenuLayer::init()) return false;
 		auto oldtitle = this->getChildByID("main-title");
 
-		if (!oldtitle || !oldtitle->isVisible()) { // make a button in the bottom-menu instead of making a title if there is no title
+		if (!oldtitle || !oldtitle->isVisible() || Loader::get()->isModLoaded("undefined0.icon_ninja") || Mod::get()->getSettingValue<bool>("forceBtn")) {
 			auto btmmenu = this->getChildByID("bottom-menu");
 			if (!btmmenu) return true;
 
@@ -50,7 +50,7 @@ class $modify(MyMenuLayer, MenuLayer) {
 	
 	void iammusic(CCObject*) {
 		std::string rngtxt = "Coming in 5 years!";
-		switch(rand() % 20) { // i never see "SEEYUH" when its at 19 so its at 20, probably just me being unlucky
+		switch(rand() % 20) { 
 			case 1: rngtxt = "12 0CLOCK PST";
 			break;
 			case 2: rngtxt = "FRIDAY";
@@ -100,6 +100,7 @@ class $modify(MyMenuLayer, MenuLayer) {
 class $modify(MyLoadingLayer, LoadingLayer) {
 	bool init(bool p0) {
 		if (!LoadingLayer::init(p0)) return false;
+
 		auto oldtitle = this->getChildByIDRecursive("gd-logo");
 		if (!oldtitle) return true;
 		typeinfo_cast<CCSprite*>(oldtitle)->setOpacity(0);
