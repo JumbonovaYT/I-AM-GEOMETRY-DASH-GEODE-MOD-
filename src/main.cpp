@@ -43,6 +43,7 @@ class $modify(MyMenuLayer, MenuLayer) {
 				menu_selector(MyMenuLayer::iammusic)
 			);
 			title->setID("iammusic-title"_spr);
+			title->setColor(Mod::get()->getSettingValue<ccColor3B>("color"));
 			titlemenu->addChild(title);
 		}
 		return true;
@@ -110,6 +111,7 @@ class $modify(MyLoadingLayer, LoadingLayer) {
 
 		auto title = CCSprite::create("title.png"_spr);
 		title->setID("iammusic-title"_spr);
+		title->setColor(Mod::get()->getSettingValue<ccColor3B>("color"));
 		oldtitle->addChild(title);
 		title->setPosition({215, 30});
 		return true;

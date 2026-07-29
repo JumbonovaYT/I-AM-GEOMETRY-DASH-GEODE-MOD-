@@ -1,3 +1,6 @@
+# 1.1.0
+- You can change the color of the logo now (suggested by [cy1der](user:5608309))
+
 # 1.0.8
 - so uh i forgot that geode already has node ids on the layers modified in this mod, removed the node ids dependency
 
@@ -16,7 +19,7 @@
 - iOS support.
 
 # 1.0.5
-- Mod works with Geometry Pride (`flingus.geometry_pride`) by flingus (thanks hiimjustin000).
+- Mod works with Geometry Pride (`flingus.geometry_pride`) by flingus (thanks hiimjasmine00).
 - Small fixes like `!oldtitle->isVisible() || !oldtitle` becoming `!oldtitle || !oldtitle->isVisible()`.
 
 # 1.0.4 
