@@ -15,14 +15,12 @@ class $modify(MyMenuLayer, MenuLayer) {
 		if (!oldtitle || !oldtitle->isVisible() || Loader::get()->isModLoaded("undefined0.icon_ninja") || Mod::get()->getSettingValue<bool>("forceBtn")) {
 			auto btmmenu = this->getChildByID("bottom-menu");
 			if (!btmmenu) return true;
-
-			auto newbtnspr = CircleButtonSprite::create(
-				CCSprite::create("btn.png"_spr),
-				CircleBaseColor::Green,
-				CircleBaseSize::MediumAlt
-			);
 			auto newbtn = CCMenuItemSpriteExtra::create(
-				newbtnspr,
+				CircleButtonSprite::create(
+					CCSprite::create("btn.png"_spr),
+					CircleBaseColor::Green,
+					CircleBaseSize::MediumAlt
+				),
 				this,
 				menu_selector(MyMenuLayer::iammusic)
 			);

@@ -1,3 +1,6 @@
+# 1.1.1
+- 2.2091 support
+
 # 1.1.0
 - You can change the color of the logo now (suggested by [cy1der](user:5608309))
 
